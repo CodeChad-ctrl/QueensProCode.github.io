@@ -1,0 +1,566 @@
+
+
+body {
+
+
+
+  background: #ffff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ee6f6f, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ee6f6f, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #000;
+  border-radius: 20px;
+  --nav-load-time: 300ms; 
+--nav-link-load-time:500ms; 
+  }
+
+  .page-title {
+    text-align: center;
+    font-size:64px;
+    font-style: oblique;
+    font-weight:100;
+    font-family: sans-serif;
+    
+    }
+
+
+  
+  
+  
+  
+    .container {
+      position: relative!important;
+      left: 10px;
+      border: 3px solid black!important;
+      background-color: white!important;
+      border-radius: 5px!important;
+      padding: 1  0%!important;
+      margin: 10% 100%!important;
+    }
+  
+  
+    .container2 {
+      position: relative!important;
+      
+      background-color: white!important;
+      border-radius: 5px!important;
+      
+      margin: 10% 30%!important;
+    }
+  
+    
+    
+    
+    
+    
+    /* Darker chat container */
+    .darker {
+      border-color: white;
+      border: 1px solid black;
+      background-color: white;
+      padding: 1  0px;
+      border-radius: 5px;
+      margin: 10px 30px;
+    }
+  
+    .container3 {
+      position: relative;
+      background-color:white;
+      
+      border-radius: 5px;
+      
+      margin: 10px 30px;
+    }
+  
+    .container4 {
+      position: relative;
+      background-color:white;
+      
+      border-radius: 5px;
+      
+      margin: 10px 30px;
+    }
+  
+    .container3 h4 {
+      font-family: "Times New Roman", Times, serif;
+    }
+  
+    .container-view-content {
+      position: relative;
+      left: 10px;
+      border: 5px solid black;
+      background-color: white;
+      border-radius: 2px;
+      padding: 1  0px;
+      margin: 10px 100px;
+    }
+  
+    .container2 {
+      position: relative!important;
+      
+      background-color: white;
+      border-radius: 5px;
+      
+      margin: 10px 30px;
+    }
+  
+    
+  
+  
+    
+    /* Style the right image */
+    .container img.right {
+      float: right;
+      margin-left: 20px;
+      margin-right:0;
+    }
+    
+    /* Style time text */
+    .time-right {
+      float: right;
+      color: #aaa;
+    }
+    
+    /* Style time text */
+    .time-left {
+      float: left;
+      color: #999;
+    }
+  
+  
+    /* Style the sidebar - fixed full height */
+  .sidebar {
+      height: 100%;
+      width: 100px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: red;
+      overflow-x: hidden;
+      padding-top: 16px;
+      }
+      
+      /* Style sidebar links */
+      .sidebar a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+      animation-name: nav-link-load;
+       animation-duration: var(--nav-link-load-time) ;
+       animation-timing-function: ease-in;
+       animation-delay: var(--nav-load-time);
+       animation-fill-mode: forwards;
+       transform: scale(0);
+      }
+      
+      /* Style links on mouse-over */
+      .sidebar a:hover {
+      color: #f1f1f1;
+      }
+      .sidebar li {
+        color: #f1f1f1;
+        list-style: none;
+        
+     }
+      
+      /* Style the main content */
+      .main {
+      margin-left: 160px; /* Same as the width of the sidenav */
+      padding: 0px 10px;
+      }
+
+
+      .sidebar span {
+        top: 20%;
+        left: 5;
+        text-decoration: none; 
+        font-weight: bold;
+        font-size: 2rem; 
+        color: #FFF;
+        
+  
+  
+      }
+      
+      /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+      @media screen and (max-height: 450px) {
+      .sidebar {padding-top: 15px;}
+      .sidebar a {font-size: 18px;}
+      }
+      
+      
+      
+      /*  Get the headers of the page to come to the centre of the screen*/
+      
+      .headers {
+       text-align: center;
+      }
+  
+  
+      /* This is the style mark up used for the uplaod function in each tutor_view_module.php   */
+  
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  
+  
+  
+  .file__upload {
+      width: 400px;
+      height: 445px;
+      margin: 20px;
+      box-shadow: 0 0 5px rgba(0,0,0,.3);
+  }
+  
+  .file__upload .header {
+      width: 100%;
+      height: 145px;
+      background: #4db6ac;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px 5px 0 0;
+  }
+  
+  .file__upload .header p {
+      color: #FFF;
+  }
+  
+  .file__upload .header p i.fa {
+      margin-right: 10px;
+  }
+  
+  .file__upload .header p span {
+      font-size: 2rem;
+      font-weight: 100;
+  }
+  
+  .file__upload .header p span span {
+      font-weight: 600;
+  }
+  
+  .file__upload .body {
+      background: #FFF;
+      width: 100%;
+      height: calc(100% - 145px);
+      border-radius: 0 0 5px 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .file__upload .body input[type="file"] {
+      opacity: 0;
+  }
+  
+  .file__upload .body i.fa {
+      color: #d3d3d3;
+      margin-bottom: 20px;
+  }
+  
+  .file__upload .body p strong {
+      color: #4db6ac;
+  }
+  
+  .file__upload .body p span {
+      color: #4db6ac;
+      text-decoration: underline;
+  }
+  
+  .btn {
+      background: #4db6ac;
+      border: none;
+      outline: none;
+      margin: 20px 0;
+      padding: .7rem 2rem;
+      font-size: 1.3rem;
+      color: #FFF;
+      border-radius: 3px;
+      opacity: .8;
+      cursor: pointer;
+      transition: .3s;
+  }
+  
+  .btn:hover {
+      opacity: 1;
+  }
+  
+  #link_checkbox {
+      display: none;
+  }
+  
+  #link {
+      border: 1px solid;
+      color: #4db6ac;
+      background: none;
+      width: calc(100% - 20px);
+      border-radius: 0;
+      outline: none;
+      padding: 10px;
+      font-size: 1rem;
+      margin: 10px 0;
+      display: none;
+  }
+  
+  #link_checkbox:checked ~ #link {
+      display: block;
+  }
+  
+  label[for="link_checkbox"] {
+      padding: .5rem 2rem;
+      background: #4db6ac;
+      color: #FFF;
+      outline: none;
+      cursor: pointer;
+  }
+  
+  .download .download_link {
+      text-decoration: none;
+      color: #FFF;
+      background: #4db6ac;
+      padding: .5rem 2rem;
+      border-radius: 3px;
+      opacity: .8;
+      transition: .3s;
+  }
+  
+  .download .download_link:hover {
+      opacity: 1;
+  }
+   
+  
+  .profile-body{
+      background: #67B26F;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      padding: 0;
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      color: #000;
+  }
+  
+  
+  
+  .progress-g {
+      background-color: grey;
+      border-radius: 20px;
+      height: 30px;
+      width: 300px;
+  
+    }
+  
+  
+  
+  
+    .progress-done-g {
+      background: linear-gradient(to left, #F2709C, #FF9472) ;
+      height:100%;
+      border-radius: 20px;
+      height: 100%; 
+      display: flex; 
+      align-items:center; 
+      justify-content: center; 
+     
+      animation: progress-done 2s; 
+  
+  
+      
+      
+  
+  
+      
+  
+  
+    }
+
+    .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 200ms ease-in-out;
+        border: 1px solid black;
+        border-radius: 10px;
+        z-index: 10;
+        background-color: white;
+        width: 500px;
+        max-width: 80%;
+      }
+      
+      .modal.active {
+        transform: translate(-50%, -50%) scale(1);
+      }
+      
+      .modal-header {
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid black;
+      }
+      
+      .modal-header .title {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+      
+      .modal-header .close-button {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+      
+      .modal-body {
+        padding: 10px 15px;
+      }
+      
+      #overlay {
+        position: fixed;
+        opacity: 0;
+        transition: 200ms ease-in-out;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .5);
+        pointer-events: none;
+      }
+      
+      #overlay.active {
+        opacity: 1;
+        pointer-events: all;
+      }
+    
+      @keyframes nav-load {
+        0%
+         {
+           transform: translate(-100%);
+         }
+         100% {
+           transform: translate(0);
+         }
+          
+        }
+        
+        @keyframes nav-link-load {
+          0%
+           {
+             transform: scale(0);
+           }
+        
+           90% {
+             transform: scale(1.1);
+             
+           }
+           100% {
+             transform: scale(1);
+           }
+            
+          }
+
+
+          * CSS for the calendar found in tutor_calendar.php */
+
+  .cld-main{
+    width: 100%;
+  }
+  .cld-main a{
+    color: #000;
+    text-decoration: none;
+  }
+    .cld-datetime{
+      position: relative;
+      width: 66%;
+      min-width: 100px;
+      max-width: 300px;
+      margin: auto;
+      overflow: hidden;
+    }
+    .cld-datetime .today{
+      position: relative;
+      float: left;
+      width: calc(100% - 40px);
+      margin: auto;
+      text-align: center;
+    }
+    .cld-nav{
+      position: relative;
+      width: 20px;
+      height: 20px;
+      margin-top: 2px;
+    }
+    .cld-nav:hover{
+      cursor: pointer;
+    }
+    .cld-nav:hover svg{
+        fill: #666;
+    }
+    .cld-rwd{
+      float: left;
+    }
+    .cld-fwd{
+      float: right;
+    }
+      
+  .cld-labels, .cld-days{
+    padding-left: 0;
+  }
+    .cld-label, .cld-day{
+      box-sizing: border-box;
+      display: inline-block;
+      width: 14.28%;
+      text-align: center;
+    }
+    .cld-day{
+      display: block;
+      float: left;
+      position: relative;
+      margin: 0;
+      padding: 5px;
+      height: 75px;
+      border: 1px solid #ddd;
+      overflow-y: auto;
+    }
+    .cld-day.clickable:hover{
+      cursor: pointer;
+    }
+    .cld-day.today{
+      border: 1px solid #7B00FF;
+    }
+    .cld-day.disableDay{
+      opacity: 0.5;
+    }
+    .cld-day.nextMonth, .cld-day.prevMonth{
+      opacity: 0.33;
+    }
+      .cld-number{
+        margin: 0;
+        text-align: left;
+      }
+        .cld-title{
+          font-size: .8em;
+          display: block;
+          margin: 0;
+          font-weight: normal;
+        }
+        .cld-day:hover{
+          background: #eee;
+        }
+        .cld-number.eventday{
+          font-weight: bold;
+          font-size: large;
+        }
+        .cld-number.eventday:hover{
+          background: #eee;
+        }
+        
+  
